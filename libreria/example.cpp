@@ -24,7 +24,8 @@ bool add(int _Value, int* arr, int N) {
 }
 
 bool add(int _pos, int _Value, int* arr, int N) {
-	if (_pos >= 0 && _pos < N && arr[_pos] != NULL) {
+	if (_pos >= 0 && _pos < N && arr[_pos] != NULL)
+	{
 		arr[_pos] = _Value;
 		return true;
 	}
@@ -57,6 +58,7 @@ bool remove(int _Value, int* arr, int N) {
 		return true;
 	return false;
 }
+
 
 bool removePos(int _pos, int* arr, int N) {
 	int i = 0, j = 0;
